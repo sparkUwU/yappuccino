@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpost" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Yappuccino ☕</title>
+</head>
+
+<main class="chat-container">
+    <header class="chat-header">
+        <h1>Yappuccino ☕</h1>
+        <p>
+            Freshly brewed artificial nonsense.
+        </p>
+    </header>
+
+    <section class="chat-messages" id="chat-messages">
+        <div class="message bot-message">
+            Hey there! ☕ What can I help you brew today?
+        </div>
+    </section>
+
+
+    <form class="chat-form" id="chat-form">
+        <input
+            type="text",
+            id="message-input"
+            placeholder="Spill your thoughts..."
+            autocomplete="off"
+            required
+        >
+
+        <button type="submit">Send</button>
+
+
+    </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</main>
+
+</html>
